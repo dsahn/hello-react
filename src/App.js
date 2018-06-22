@@ -1,5 +1,6 @@
 import React, { Component, fragment } from 'react';
 import './app.css';
+import MyName from './MyName';
 
 class App extends Component {
   render() {
@@ -15,6 +16,8 @@ class App extends Component {
           <h1>안녕하세요 리액트</h1>
         </div>
         <div className="box">yoyo</div>
+        <MyName name="dongsu" />
+        <MyName />
       </fragment>
     );
   }

@@ -28,8 +28,23 @@ variable scope 는 함수 단위라고함 <--> let : block 단위로 정해짐, 
 
 삼항연산자 사용가능함
 
+모든 컴포넌트는 render 함수를 작성해야함. tostring 같은 느낌
+
+여러 개의 export는 안된다..!
+
+그래서 jsx가 정확이 뭔데? react를 import 해야한다고함
+
+
 ### style
 - class는 className이라고 기술함
 - import 시켜서 css 적용
+
+### props, state
+- https://react-anyone.vlpt.us/04.html
+- props 
+  - 자식에게 상속가능한 값
+- 비구조화 할당 구문 : https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
+  - 매우 편해보인다. 익숙해지면 좋을듯
+
 
 
