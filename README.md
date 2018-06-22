@@ -28,4 +28,8 @@ variable scope 는 함수 단위라고함 <--> let : block 단위로 정해짐, 
 
 삼항연산자 사용가능함
 
+### style
+- class는 className이라고 기술함
+- import 시켜서 css 적용
+
 
