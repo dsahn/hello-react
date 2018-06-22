@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component, fragment } from 'react';
+import './app.css';
 
 class App extends Component {
   render() {
@@ -9,9 +10,12 @@ class App extends Component {
       fontSize: '33px'
     };
     return (
-      <div style={style}>
-        <h1>안녕하세요 리액트</h1>
-      </div>
+      <fragment>
+        <div style={style}>
+          <h1>안녕하세요 리액트</h1>
+        </div>
+        <div className="box">yoyo</div>
+      </fragment>
     );
   }
 }
