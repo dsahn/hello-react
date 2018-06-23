@@ -47,5 +47,11 @@ variable scope 는 함수 단위라고함 <--> let : block 단위로 정해짐, 
   - 매우 편해보인다. 익숙해지면 좋을듯
 - class field 문법 : https://tc39.github.io/proposal-class-fields/
 
-
-
+### lifecycle api
+- mounting, updating, unmounting
+  - mounting : 브라우저상에 컴포넌트가 나타나는것
+  - updating : 컴포넌트의 props, state 가 바뀌었을 때
+  - unmmounting : 컴포넌트가 브라우저 상에서 사라질 때
+이미지 출처 : https://twitter.com/dan_abramov/status/981712092611989509
+- shouldComponentUpdate : 최적화용
+- getSnapshotBeforeUpdate : 렌더링 결과가 브라우저에 반영되기 직전에 호출되는 함수
