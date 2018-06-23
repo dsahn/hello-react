@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-/*
 class MyName extends Component {
   // using default properties
   static defaultProps = {
@@ -15,8 +14,11 @@ class MyName extends Component {
     );
   }
 }
-*/
+// defaultProps can be written also
+// MyName.defaultProps = { name : 'haha' };
 
+/*
+// 함수형 컴포넌트
 const MyName = ({ name }) => {
   return (
     <div>
@@ -24,5 +26,6 @@ const MyName = ({ name }) => {
     </div>
   );
 };
+*/
 
 export default MyName;

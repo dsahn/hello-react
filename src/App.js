@@ -1,6 +1,7 @@
 import React, { Component, fragment } from 'react';
 import './app.css';
 import MyName from './MyName';
+import Counter from './Counter';
 
 class App extends Component {
   render() {
@@ -17,7 +18,9 @@ class App extends Component {
         </div>
         <div className="box">yoyo</div>
         <MyName name="dongsu" />
+        {/* using defaultProps */}
         <MyName />
+        <Counter />
       </fragment>
     );
   }

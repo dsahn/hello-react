@@ -45,6 +45,7 @@ variable scope 는 함수 단위라고함 <--> let : block 단위로 정해짐, 
   - 자식에게 상속가능한 값
 - 비구조화 할당 구문 : https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
   - 매우 편해보인다. 익숙해지면 좋을듯
+- class field 문법 : https://tc39.github.io/proposal-class-fields/
 
 
 
