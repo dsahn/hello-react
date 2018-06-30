@@ -1,0 +1,15 @@
+{
+  "name": "proja",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "asdf"
+  },
+  "author": "dongsh",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.3.0"
+  }
+}
