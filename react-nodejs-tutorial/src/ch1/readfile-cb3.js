@@ -12,23 +12,40 @@ const fs = require('fs')
 // })
 
 // using promise
-function readFile_pr(fname) {
-	return new Promise((resolve) => {
-		fs.readFile(fname, 'utf-8', (err, s) => {
-			resolve(s)
-		})
+// function readFile_pr(fname) {
+// 	return new Promise((resolve) => {
+// 		fs.readFile(fname, 'utf-8', (err, s) => {
+// 			resolve(s)
+// 		})
+// 	})
+// }
+// readFile_pr('a.txt')
+// .then((text) => {
+// 	console.log('read from a...', text)
+// 	return readFile_pr('b.txt')  // return promise object
+// })
+// .then((text) => {
+// 	console.log('read from b...', text)
+// 	return readFile_pr('c.txt')
+// })
+// .then((text) => {
+// 	console.log('read from c...', text)
+// })
+
+// using generator
+function read_gfn (g, fname) {
+	fs.readFile(fname, 'utf-8', (err, data) => {
+		g.next(data)
 	})
 }
 
-readFile_pr('a.txt')
-.then((text) => {
-	console.log('read from a...', text)
-	return readFile_pr('b.txt')  // return promise object
-})
-.then((text) => {
-	console.log('read from b...', text)
-	return readFile_pr('c.txt')
-})
-.then((text) => {
-	console.log('read from c...', text)
-})
+const g = (function * () {
+	const a = yield read_gfn(g, 'a.txt')
+	console.log(a)
+	const b = yield read_gfn(g, 'b.txt')
+	console.log(b)
+	const c = yield read_gfn(g, 'c.txt')
+	console.log(c)
+})()
+
+g.next()
