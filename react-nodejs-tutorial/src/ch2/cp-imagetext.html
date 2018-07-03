@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="https://unpkg.com/react@15/dist/react.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.38/browser.min.js"></script>
+    <title>image component</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+    // using component
+    const dom = <div>
+        <PhotoText image="pic" label="day of okinawa"></PhotoText>
+        <PhotoText image="pic2" label="okinawa beach"></PhotoText>
+        <PhotoText image="pic3" label="blue sea"></PhotoText>
+    </div>
+    // modify dom with react
+    ReactDOM.render(
+        dom, document.getElementById('root')
+        )
+    function PhotoText(props) {
+        const url = "img/" + props.image + ".jpeg"
+        const label = props.label
+        const boxStyle = {
+            border: "1px solid silver",
+            margin: "8px",
+            padding: "4px"
+        }
+        return (<div style={boxStyle}>
+            <img src={url} width="128" alt={label}/>
+            <span>{label}</span>
+            </div>)
+    }
+    </script>
+</body>
+</html>
