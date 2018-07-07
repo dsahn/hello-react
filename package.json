@@ -1,0 +1,12 @@
+{
+  "name": "hello-react",
+  "version": "1.0.0",
+  "description": "모던 자바스크립트 개발자를 위한 리액트 프로그래밍 실습",
+  "main": "index.js",
+  "repository": "https://github.com/dsahn/hello-react.git",
+  "author": "DONGSU AN <ads50112@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.15.1"
+  }
+}
