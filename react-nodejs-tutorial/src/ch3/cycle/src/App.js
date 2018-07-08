@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Stopwatch from './Stopwatch'
 // import logo from './logo.svg';
 // import './App.css';
 
@@ -39,6 +40,7 @@ class App extends Component {
     }
     return (<div>
       <button onClick={setStateHandler}>setState</button>
+      <Stopwatch />
       </div>)
   }
 }
