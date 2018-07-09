@@ -5,9 +5,11 @@ export class SimpleForm extends React.Component {
         super(props)
         this.state = {value: ''}
     }
+    // onChange 의 핸들러로 등록되므로 바뀔때마다 console.log 가 찍힘
     doChange (e) {
         const newValue = e.target.value
         this.setState({value: newValue})
+        // console.log('doChange')
     }
     doSubmit (e) {
         window.alert('send: ' + this.state.value)
